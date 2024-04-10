@@ -19,21 +19,10 @@ const circleGenerator = () => {
     const creatingCircle = document.createElement('div');
     creatingCircle.setAttribute('class','circles');
     container.appendChild(creatingCircle);
-    // creatingCircle.style.width = '40px';
-    // creatingCircle.style.height = '40px';
-    creatingCircle.style.background = Math.floor(Math.random() * colorArray.length)
+    creatingCircle.style.background = colorArray[Math.floor(Math.random() * colorArray.length)]
     creatingCircle.style.position = 'absolute'; 
+    creatingCircle.style.top = Math.floor(Math.random()*100) +'%';
+    creatingCircle.style.bottom = Math.floor(Math.random()*100) +'%';
+    creatingCircle.style.left = Math.floor(Math.random()*100) +'%';
+    creatingCircle.style.right = Math.floor(Math.random()*100) +'%';
 }
-
-const colorGenerator = () => {
-    // rgba(#, #, #)
-}
-
-// const randomNumberGenerator = (max,min) => {
-//     min = 1;
-//     max = 255; 
-
-//     return Math.floor(Math.random() * (max - min)+ min);
-
-
-// }
