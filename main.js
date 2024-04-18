@@ -1,17 +1,37 @@
-const genButton = document.getElementById('button')
+document.addEventListener('DOMContentLoaded', function() {
+       const genButton = document.getElementById('button');
+       
+       genButton.addEventListener('click', generateCircle);
+   });
+   
+   function generateCircle() {
+       // array of color strings
+       let colorsArray = ['orange', 'purple', 'yellow', 'blue', 'yellow', 'white', 'pink', 'red', 'brown', 'black', 'green'];
+       // choose a random color from colorsArray
+       let color = colorsArray[Math.floor(Math.random() * colorsArray.length)];
+     
+       
+       // circle style
+       const circle = document.createElement('div'); 
+       circle.style.width = '1.25em';
+       circle.style.height = '1.25em';
+       circle.style.backgroundColor = color;
+       circle.style.borderRadius = '50%';
+       circle.style.position = 'absolute';
+       circle.style.top = Math.floor(Math.random() * 100) + '%';
+       circle.style.left = Math.floor(Math.random() * 100) + '%';
+       circle.style.right = Math.floor(Math.random() * 100) + '%';
+       circle.style.bottom = Math.floor(Math.random() * 100) + '%';
 
-genButton.addEventListener('click', generateCircle => {
-    function generateCircle () {
-        // create element
-        //get element and append new element
-        const circle = document.querySelector('div');
-        const  = createElement
-        }
+       
+       
+       // append
+       document.querySelector('.container').appendChild(circle);
+   }
 
-})
 
-// get element by Id 
-//function to generate circles
+
+
 
 
 
