@@ -1,0 +1,21 @@
+#button {
+
+background-color: red;
+color: white;
+border-radius: 12px;
+position: relative;
+left: 40%;
+
+
+}
+
+.container {
+   width: 700px ;
+   height: 640px;
+   border: solid black;
+   border-color: black;
+   margin: 30px;
+   overflow: hidden;
+   position: relative;
+   
+}
